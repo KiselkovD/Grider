@@ -1,2 +1,3 @@
 # Grider
-js program to cut imeges in matrix of imges
+
+js program to cut images in matrix of images
