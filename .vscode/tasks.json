@@ -1,0 +1,39 @@
+{
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "git automated commit",
+			"type": "shell",
+			"command": [
+				// list of commands
+				"git add . \n",
+				"git commit -m 'Automated commit'  \n",
+				"git push \n"
+			]
+		},
+		{
+			"label": "docker build & run",
+			"type": "shell",
+			"command": [
+				// list of commands
+				"docker stop my-grider \n",
+				"docker remove my-grider \n",
+				"docker build -t grider . \n",
+				"docker run --name my-grider -p 800:80 -d grider \n",
+				"start http://127.0.0.1:800/ \n"
+			]
+		},
+		{
+			"label": "docker first build & run",
+			"type": "shell",
+			"command": [
+				// list of commands
+				"docker build -t grider . \n",
+				"docker run --name my-grider -p 800:80 -d grider \n",
+				"start http://127.0.0.1:800/ \n"
+			]
+		}
+	]
+}
