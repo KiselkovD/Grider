@@ -1,6 +1,6 @@
 # Grider
 
-![some png](https://github.com/KiselkovD/some_ci_test/raw/main/ci_cd.png)
+![exemple how it work](https://github.com/KiselkovD/Grider/blob/main/exemple.png)
 
 ## About
 
