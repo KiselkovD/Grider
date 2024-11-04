@@ -1,15 +1,21 @@
-body {
-	font-family: Arial, sans-serif;
-	background-color: #f0f0f0;
+canvas {
+	background-color: transparent;
+	padding: 2px;
 }
-
-button {
-	font-size: 16px;
-	border-radius: 5px;
-	background-color: #007bff;
-	color: white;
+img {
+	max-width: 100%;
+	max-height: 100%;
 }
-
-button:hover {
-	background-color: #00ff62;
+#img {
+	display: block;
+	height: 400px;
+	width: 400px;
+	overflow: hidden;
+	border: 2px solid #000000;
+}
+#container {
+	position: absolute;
+	z-index: 1;
+	/*height: 200px;
+				width: 200px;*/
 }

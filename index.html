@@ -3,14 +3,32 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Простой проект</title>
+		<title>Разделение изображения</title>
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body>
-		<div class="container">
-			<h1 id="title">Привет, мир!</h1>
-			<button id="changeTextButton">Изменить текст</button>
+		<input
+			type="file"
+			id="imageInput"
+			accept="image/*"
+			onchange="loadImage(event)"
+		/>
+		<input type="number" id="numberInput-h" min="1" value="1" />
+		<input type="number" id="numberInput-v" min="1" value="1" />
+		<button id="doWork" style="display: none" onclick="setDownloadLinks()">
+			cut
+		</button>
+		<hr />
+		<div style="display: inline-block">
+			<canvas id="container"></canvas>
+			<div id="img"></div>
 		</div>
+
+		<div
+			id="output-part"
+			style="display: inline-block; vertical-align: top"
+		></div>
+
 		<script src="js/script.js"></script>
 	</body>
 </html>
