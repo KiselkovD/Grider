@@ -1,6 +1,6 @@
 # Grider
 
-<img src="https://github.com/KiselkovD/Grider/blob/main/res/exemple.png" alt="example how it work" height="200"/>
+<img src="https://github.com/KiselkovD/Grider/blob/main/res/exemple.png" alt="example how it work" height="350"/>
 
 ## About
 
