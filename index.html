@@ -15,7 +15,11 @@
 		/>
 		<input type="number" id="numberInput-h" min="1" value="1" />
 		<input type="number" id="numberInput-v" min="1" value="1" />
-		<button id="doWork" style="display: none" onclick="setDownloadLinks()">
+		<button
+			id="doWork"
+			style="display: none"
+			onclick="cutAndSetDownloadLinks()"
+		>
 			cut
 		</button>
 		<hr />
@@ -24,6 +28,7 @@
 			<div id="img"></div>
 		</div>
 
+		<!-- for output parts of image -->
 		<div
 			id="output-part"
 			style="display: inline-block; vertical-align: top"

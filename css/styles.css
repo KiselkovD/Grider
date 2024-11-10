@@ -14,8 +14,7 @@ img {
 	border: 2px solid #000000;
 }
 #container {
+	/* add overlay to canvas grid */
 	position: absolute;
 	z-index: 1;
-	/*height: 200px;
-				width: 200px;*/
 }
